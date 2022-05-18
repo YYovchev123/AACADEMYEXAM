@@ -3,6 +3,7 @@ package com.mavenProject.MavenProjectForFinalExamTournament.service.sportClub;
 import com.mavenProject.MavenProjectForFinalExamTournament.entitiy.SportClub;
 import com.mavenProject.MavenProjectForFinalExamTournament.exception.RecordNotFoundException;
 import com.mavenProject.MavenProjectForFinalExamTournament.repositroy.SportClubRepository;
+import com.mavenProject.MavenProjectForFinalExamTournament.service.player.PlayerService;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +16,7 @@ import java.util.List;
 public class SportClubServiceImpl implements SportClubService{
 
     private final SportClubRepository sportClubRepository;
+    //private final PlayerService playerService;
 
     public SportClubServiceImpl(SportClubRepository sportClubRepository) {
         this.sportClubRepository = sportClubRepository;

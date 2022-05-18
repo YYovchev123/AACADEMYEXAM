@@ -22,11 +22,11 @@ public class Tournament {
 
     private String name;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "sport_id", referencedColumnName = "id")
     private Sport sport;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.PERSIST)
     private List<SportClub> sportClubs;
 
     private String date;
